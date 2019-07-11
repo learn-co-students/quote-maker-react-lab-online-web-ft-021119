@@ -20,6 +20,7 @@ export default (state = [], action) => {
         return quote
       })
       return quotes
+
     case 'DOWNVOTE_QUOTE':
       const addDownvoteState = [...state]
       const quotesdown = addDownvoteState.map(quote => {
